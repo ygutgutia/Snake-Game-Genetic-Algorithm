@@ -46,27 +46,27 @@ Initially, when the snakes are untrained, the initial weights of the neural netw
 A.	mutation intensity = 0.1 % of total genes of a chromosome
 Here, we have selected 0.1% of genes in each chromosome and applied mutation on them. The graph is flat with very high variation after each generation for the fitness value.
 
-![plot](saved files/graph20210509-193537.png)
+![plot](savedFiles/graph20210509-193537.png)
 
 B.	mutation intensity = 10 % of total genes of a chromosome
 Here, we have selected 10 % of genes in each chromosome and applied mutation on them. The fitness value continuously improves in each generation, and the graph has a positive average slope.
 
-![plot](saved files/graph20210509-204259.png)
+![plot](savedFiles/graph20210509-204259.png)
 
 C.	mutation intensity = 1% of total genes of a chromosome
 Here, we have selected 1 % of genes in each chromosome and applied mutation on them. The fitness value continuously improves in each generation, and the graph has a positive average slope. The graph is more consistently improving than B.
 
-![plot](saved files/graph20210509-230755.png)
+![plot](savedFiles/graph20210509-230755.png)
 
 D.	mutation = 1 gene in a chromosome
 Here, we have selected 1 gene at random in each chromosome and applied mutation only on it. The fitness value is very low and the graph is highly variable.
 
-![plot](saved files/graph20210510-143412.png)
+![plot](savedFiles/graph20210510-143412.png)
 
 E.	mutation intensity = 10% of total genes in a chromosome but the same genes can be repeated.
 Here, we have selected 10% number of total genes at random with replacement, in each chromosome and applied mutation only on it. The graph is highly variable, and cannot be trusted in all cases. Although high peaks are obtained, the snake isn’t able to keep up with the improvement and keeps losing progress.
 
-![plot](saved files/graph20210510-143841.png)
+![plot](savedFiles/graph20210510-143841.png)
 
 ## Conclusion
 From the above data and graphs, we can see how the snake has over several generations learnt to avoid walls and its body and eat apples. The fitness value increases in an overall fashion, and so does the maximum score of each snake. For mutation intensity of 1% and 10%, the results are most favorable. Hence, we can conclude that for very low mutation intensity (0.1%), the learning rate is very slow and highly variable. Mutation rate can’t be very high, else it would lead to a random search. Thus, for our problem, a mutation probability of 1-10% is highly favorable.
